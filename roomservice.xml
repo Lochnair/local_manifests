@@ -11,6 +11,9 @@
   <remote  name="suicide"
            fetch="ssh://git@github.com/Suicide-Squirrel/"
            revision="lineage-16.0" />
+  
+  <remote  name="zx2c4" 
+           fetch="https://git.zx2c4.com/" />
 
  
   <!-- REMOVALS (must be at TOP)
@@ -22,6 +25,10 @@
   #####################################################-->
   <project name="Titan-Kernel-LG-G4" path="kernel/lge/msm8992" remote="suicide" revision="android-9.0_sfx" />
 
+  <!-- WireGuard
+  #####################################################-->
+  <project remote="zx2c4" name="android_kernel_wireguard" path="kernel/wireguard" revision="master" sync-s="true" />
+  
   <!-- DEVICE TREES
   #####################################################-->
   <project name="android_device_lge_g4-common" path="device/lge/g4-common" remote="suicide" />
